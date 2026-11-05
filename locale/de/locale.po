@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+
+msgid "plugins.generic.langsciAdditionalFeatures.displayName"
+msgstr "Language Science Press Zusatzfunktionen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.description"
+msgstr "Stellt zusätzliche, einzeln aktivierbare Funktionen für Language Science Press bereit."
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.groupLabel"
+msgstr "Zusatzfunktionen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.groupDescription"
+msgstr "Aktivieren oder deaktivieren Sie die Zusatzfunktionen für diesen Verlag."
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
+msgstr "Aktivierte Funktionen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
+msgstr "Publikationsstatus: Ermöglicht es, den Status einer Publikation als Forthcoming, Published oder Superseded zu definieren."
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.fieldLabel"
+msgstr "Publikationsstatus"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.forthcoming"
+msgstr "Forthcoming"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.published"
+msgstr "Published"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.superseded"
+msgstr "Superseded"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.settingsLabel"
+msgstr "Remote-Kapitel: Ermöglicht externe Galerien und Kapitelnummerierung in Kapiteldefinitionen."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.remoteURLLabel"
+msgstr "Beschriftung des Download-Buttons."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.chapterLabel"
+msgstr "Kapitel"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.chapterNumber"
+msgstr "Nummer"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.excludeFromCount"
+msgstr "Dieses Kapitel nicht mitzählen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.title"
+msgstr "Kapitelnummern-Versatz festlegen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.label"
+msgstr "Kapitelnummern-Versatz"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.description"
+msgstr "Diese Zahl wird zur Position jedes Kapitels addiert, um die angezeigte Nummer zu erhalten. Bei einem Versatz von 2 wird das erste Kapitel als Kapitel 3 angezeigt."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.invalid"
+msgstr "Bitte geben Sie eine ganze Zahl ein."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.defaultLabel.label"
+msgstr "Standard-Kapitelbeschriftung"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.defaultLabel.description"
+msgstr "Füllt die Beschriftung neuer externer Kapitelgalerien vorab aus."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.numbering.description"
+msgstr "Kapitelnummer = Versatz + Position des Kapitels innerhalb aller Kapitel; als „Dieses Kapitel nicht mitzählen“ markierte Kapitel werden übersprungen. Bei der Veröffentlichung werden Nummern dauerhaft in die Beschriftungen externer Kapitel-Links übernommen, deren Beschriftung die Standard-Kapitelbeschriftung und keine Ziffer enthält. Danach werden sie nicht mehr neu berechnet und müssen manuell bearbeitet werden."

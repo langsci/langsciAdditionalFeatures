@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+
+msgid "plugins.generic.langsciAdditionalFeatures.displayName"
+msgstr "Language Science Press Additional Features"
+
+msgid "plugins.generic.langsciAdditionalFeatures.description"
+msgstr "Provides additional, individually switchable features for Language Science Press."
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.groupLabel"
+msgstr "Additional Features"
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.groupDescription"
+msgstr "Enable or disable the additional features for this press."
+
+msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
+msgstr "Enabled features"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
+msgstr "Publication State: adds the option to set the state of a publication to Forthcoming, Published or Superseded."
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.fieldLabel"
+msgstr "Publication State"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.forthcoming"
+msgstr "Forthcoming"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.published"
+msgstr "Published"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.superseded"
+msgstr "Superseded"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.settingsLabel"
+msgstr "Remote Chapters: add remote galleys and chapter numbering to chapter definitions."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.remoteURLLabel"
+msgstr "Label for the download button."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.chapterLabel"
+msgstr "Chapter"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.chapterNumber"
+msgstr "Number"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.excludeFromCount"
+msgstr "Do not count this chapter"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.title"
+msgstr "Set chapter number offset"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.label"
+msgstr "Chapter number offset"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.description"
+msgstr "This number is added to the position of each chapter to get its displayed number. With an offset of 2, the first chapter is displayed as chapter 3."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.offset.invalid"
+msgstr "Please enter a whole number."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.defaultLabel.label"
+msgstr "Default chapter label"
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.defaultLabel.description"
+msgstr "Pre-fills the label of new remote chapter galleys."
+
+msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.numbering.description"
+msgstr "Chapter number = offset + position of the chapter among all chapters, skipping chapters marked \"Do not count this chapter\". When the publication is published, the numbers are written permanently into the labels of remote chapter links whose label contains the default chapter label and no digit. After that, they are no longer recalculated and need to be edited manually."
