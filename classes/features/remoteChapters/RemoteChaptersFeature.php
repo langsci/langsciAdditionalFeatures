@@ -53,7 +53,8 @@ class RemoteChaptersFeature extends Feature
         Hook::add('chapterform::readuservars', [$this, 'readInputData']);
         Hook::add('chapterform::execute', [$this, 'executeForm']);
         Hook::add('chapterdao::getAdditionalFieldNames', [$this, 'getAdditionalFieldNames']);
-        Hook::add('Templates::Catalog::Book::Main', [$this, 'displayRemoteChapters']);
+        // Remote chapters are now displayed by langsciDefaultChildTheme plugin
+        // Hook::add('Templates::Catalog::Book::Main', [$this, 'displayRemoteChapters']);
         Hook::add('Publication::publish', [$this, 'numberLabelsOnPublish']);
         Hook::add('Schema::get::publication', [$this, 'addPublicationSchema']);
         Hook::add('LoadComponentHandler', [$this, 'loadChapterGridHandler']);
