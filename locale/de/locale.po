@@ -24,6 +24,9 @@ msgstr "Aktivieren oder deaktivieren Sie die Zusatzfunktionen für diesen Verlag
 msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
 msgstr "Aktivierte Funktionen"
 
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
+msgstr "Rezensionen: Stellt vorhandene Rezensionslinks für die Buchseite bereit."
+
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
 msgstr "Publikationsstatus: Ermöglicht es, den Status einer Publikation als Forthcoming, Published oder Superseded zu definieren."
 

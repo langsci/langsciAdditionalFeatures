@@ -24,6 +24,9 @@ msgstr "Enable or disable the additional features for this press."
 msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
 msgstr "Enabled features"
 
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
+msgstr "Reviews: provide existing review links to the book page."
+
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
 msgstr "Publication State: adds the option to set the state of a publication to Forthcoming, Published or Superseded."
 

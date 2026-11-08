@@ -8,6 +8,29 @@ Features are enabled per press under Settings -> Workflow -> Submission ->
 
 ## Features
 
+### reviews
+
+Provides existing book review links to the book-page template. Enable the
+feature per press; the active theme is responsible for displaying them.
+It reads the existing `langsci_review_links` table created by the legacy
+reviewsTab plugin, which must already exist and be populated or managed
+separately. This feature does not create the table or provide an editing UI.
+Reviews are selected by submission ID, including on previews and older
+publication versions, as in the old bookPage plugin.
+
+The `reviewsBySubmission` template variable contains `link`, `linkIsValid`,
+`name`, `reviewer`, `date`, `dateIsValid`, and `money_quote` fields.
+`linkIsValid` is true only for valid HTTP(S) URLs. Valid legacy YYYYMMDD
+dates are provided as ISO dates with `dateIsValid` set to true;
+invalid dates are provided unchanged with that flag set to false.
+Disable the legacy bookPage plugin when using this feature and the LangSci
+child theme to avoid duplicate reviews and its book-page template override.
+
+To run the reviews provider and theme integration check (requires PHP SQLite
+and the installed OMP dependencies), from the OMP root run:
+
+    php plugins/generic/langsciAdditionalFeatures/tests/reviews.php
+
 ### pubState
 
 Adds a "Publication State" select (Forthcoming, Published, Superseded) before

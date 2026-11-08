@@ -16,6 +16,7 @@ namespace APP\plugins\generic\langsciAdditionalFeatures\classes;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\Feature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\pubState\PubStateFeature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\remoteChapters\RemoteChaptersFeature;
+use APP\plugins\generic\langsciAdditionalFeatures\classes\features\reviews\ReviewsFeature;
 
 class FeatureRegistry
 {
@@ -27,6 +28,7 @@ class FeatureRegistry
         return [
             PubStateFeature::class,
             RemoteChaptersFeature::class,
+            ReviewsFeature::class,
         ];
     }
 }
