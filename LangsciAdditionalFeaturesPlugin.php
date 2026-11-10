@@ -17,6 +17,7 @@ namespace APP\plugins\generic\langsciAdditionalFeatures;
 
 use APP\core\Application;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\Feature;
+use APP\plugins\generic\langsciAdditionalFeatures\classes\features\reviews\ReviewsSchemaMigration;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\FeatureRegistry;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\LangsciAdditionalFeaturesSettingsForm;
 use Illuminate\Support\Facades\DB;
@@ -30,6 +31,11 @@ class LangsciAdditionalFeaturesPlugin extends GenericPlugin
 
     /** @var Feature[] Loaded feature instances, keyed by feature id */
     private array $features = [];
+
+    public function getInstallMigration(): ReviewsSchemaMigration
+    {
+        return new ReviewsSchemaMigration();
+    }
 
     public function register($category, $path, $mainContextId = null)
     {

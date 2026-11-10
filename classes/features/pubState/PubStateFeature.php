@@ -41,6 +41,7 @@ class PubStateFeature extends Feature
     {
         Hook::add('Schema::get::publication', $this->addToPublicationSchema(...));
         Hook::add('Form::config::before', $this->addFormField(...));
+        Hook::add('Publication::edit', $this->handlePublicationEdit(...));
     }
 
     public function addToPublicationSchema(string $hookName, array $args): bool
@@ -64,6 +65,7 @@ class PubStateFeature extends Feature
 
         $form->addField(new FieldSelect(self::SETTING_NAME, [
             'label' => __('plugins.generic.langsciAdditionalFeatures.pubState.fieldLabel'),
+            'description' => __('plugins.generic.langsciAdditionalFeatures.pubState.fieldDescription'),
             'value' => $this->getPubState($form->publication),
             'options' => [
                 ['value' => self::FORTHCOMING, 'label' => __('plugins.generic.langsciAdditionalFeatures.pubState.label.forthcoming')],
@@ -93,5 +95,13 @@ class PubStateFeature extends Feature
             self::SUPERSEDED => __('plugins.generic.langsciAdditionalFeatures.pubState.label.superseded') . ': ',
             default => '',
         };
+    }
+    public function handlePublicationEdit(string $hookName, $args): bool
+    {
+        $publication = $args[0];
+        if ($this->getPubState($publication) === self::FORTHCOMING) {
+            $publication->setData('datePublished', null);
+        }
+        return Hook::CONTINUE;
     }
 }

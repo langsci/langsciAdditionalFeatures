@@ -10,6 +10,7 @@ require $root . '/lib/pkp/lib/vendor/autoload.php';
 define('PKP_STRICT_MODE', false);
 require $root . '/lib/pkp/classes/plugins/Hook.php';
 require $root . '/plugins/generic/langsciAdditionalFeatures/classes/features/Feature.php';
+require $root . '/plugins/generic/langsciAdditionalFeatures/classes/features/reviews/ReviewsRepository.php';
 require $root . '/plugins/generic/langsciAdditionalFeatures/classes/features/reviews/ReviewsFeature.php';
 
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\reviews\ReviewsFeature;
@@ -31,7 +32,7 @@ $capsule->addConnection(['driver' => 'sqlite', 'database' => ':memory:', 'prefix
 $container->instance('db', $capsule->getDatabaseManager());
 Facade::setFacadeApplication($container);
 $db = $capsule->getConnection();
-$db->statement('CREATE TABLE langsci_review_links (review_id INTEGER, submission_id INTEGER, link TEXT, link_name TEXT, reviewer TEXT, date TEXT, money_quote TEXT)');
+$db->statement('CREATE TABLE langsci_review_links (review_id INTEGER, submission_id INTEGER, publication_id INTEGER, link TEXT, link_name TEXT, reviewer TEXT, date TEXT, money_quote TEXT)');
 $db->table('langsci_review_links')->insert([
     ['review_id' => 2, 'submission_id' => 1, 'link' => 'javascript:alert(1)', 'link_name' => 'Unsafe <review>', 'reviewer' => null, 'date' => '20240230', 'money_quote' => null],
     ['review_id' => 1, 'submission_id' => 1, 'link' => 'https://example.com/?a=1&b=2', 'link_name' => 'Good & review', 'reviewer' => '<Reviewer>', 'date' => '20240229', 'money_quote' => "<script>bad</script>\nGood"],

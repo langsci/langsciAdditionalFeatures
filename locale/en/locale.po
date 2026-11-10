@@ -27,6 +27,87 @@ msgstr "Enabled features"
 msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
 msgstr "Reviews: provide existing review links to the book page."
 
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.menu"
+msgstr "Reviews"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.manage"
+msgstr "Manage reviews"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.add"
+msgstr "Add review"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.edit"
+msgstr "Edit"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.delete"
+msgstr "Delete"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.cancel"
+msgstr "Cancel"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.save"
+msgstr "Save"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.confirmDelete"
+msgstr "Delete this review?"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.empty"
+msgstr "There are no reviews for this submission."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.loading"
+msgstr "Loading..."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.name"
+msgstr "Link name"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.url"
+msgstr "Review URL"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.reviewer"
+msgstr "Reviewer"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.date"
+msgstr "Date (YYYYMMDD)"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.quotation"
+msgstr "Quotation"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.requestFailed"
+msgstr "The review request failed. Please try again."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.saved"
+msgstr "Review saved."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.deleted"
+msgstr "Review deleted."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.method"
+msgstr "This request method is not allowed."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.request"
+msgstr "The request was not authorized. Reload the page and try again."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.notFound"
+msgstr "The review was not found for this submission."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.invalid"
+msgstr "The review contains invalid fields."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.length"
+msgstr "The link name, URL, reviewer and date must each be at most 255 characters."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.name"
+msgstr "Enter a link name."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.url"
+msgstr "Enter a valid HTTP or HTTPS URL."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.date"
+msgstr "Enter a real date in YYYYMMDD format, or leave it empty."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.publication"
+msgstr "A review cannot be added because this submission has no current publication."
+
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
 msgstr "Publication State: adds the option to set the state of a publication to Forthcoming, Published or Superseded."
 
@@ -41,6 +122,9 @@ msgstr "Published"
 
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.superseded"
 msgstr "Superseded"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.fieldDescription"
+msgstr "Selecting forthcoming will remove the publication date."
 
 msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.settingsLabel"
 msgstr "Remote Chapters: add remote galleys and chapter numbering to chapter definitions."

@@ -27,6 +27,87 @@ msgstr "Aktivierte Funktionen"
 msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
 msgstr "Rezensionen: Stellt vorhandene Rezensionslinks für die Buchseite bereit."
 
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.menu"
+msgstr "Rezensionen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.manage"
+msgstr "Rezensionen verwalten"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.add"
+msgstr "Rezension hinzufügen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.edit"
+msgstr "Bearbeiten"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.delete"
+msgstr "Löschen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.cancel"
+msgstr "Abbrechen"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.save"
+msgstr "Speichern"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.confirmDelete"
+msgstr "Diese Rezension löschen?"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.empty"
+msgstr "Für diese Einreichung liegen keine Rezensionen vor."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.loading"
+msgstr "Wird geladen..."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.name"
+msgstr "Linkname"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.url"
+msgstr "Rezensions-URL"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.reviewer"
+msgstr "Rezensent/in"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.date"
+msgstr "Datum (JJJJMMTT)"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.quotation"
+msgstr "Zitat"
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.requestFailed"
+msgstr "Die Anfrage zu den Rezensionen ist fehlgeschlagen. Bitte versuchen Sie es erneut."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.saved"
+msgstr "Rezension gespeichert."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.deleted"
+msgstr "Rezension gelöscht."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.method"
+msgstr "Diese Anfragemethode ist nicht zulässig."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.request"
+msgstr "Die Anfrage wurde nicht autorisiert. Laden Sie die Seite neu und versuchen Sie es erneut."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.notFound"
+msgstr "Die Rezension wurde für diese Einreichung nicht gefunden."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.invalid"
+msgstr "Die Rezension enthält ungültige Felder."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.length"
+msgstr "Linkname, URL, Rezensent/in und Datum dürfen jeweils höchstens 255 Zeichen lang sein."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.name"
+msgstr "Geben Sie einen Linknamen ein."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.url"
+msgstr "Geben Sie eine gültige HTTP- oder HTTPS-URL ein."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.date"
+msgstr "Geben Sie ein gültiges Datum im Format JJJJMMTT ein oder lassen Sie das Feld leer."
+
+msgid "plugins.generic.langsciAdditionalFeatures.reviews.error.publication"
+msgstr "Eine Rezension kann nicht hinzugefügt werden, da diese Einreichung keine aktuelle Publikation hat."
+
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.settingsLabel"
 msgstr "Publikationsstatus: Ermöglicht es, den Status einer Publikation als Forthcoming, Published oder Superseded zu definieren."
 
@@ -41,6 +122,9 @@ msgstr "Published"
 
 msgid "plugins.generic.langsciAdditionalFeatures.pubState.label.superseded"
 msgstr "Superseded"
+
+msgid "plugins.generic.langsciAdditionalFeatures.pubState.fieldDescription"
+msgstr "Die Auswahl von Forthcoming entfernt das Publikationsdatum."
 
 msgid "plugins.generic.langsciAdditionalFeatures.remoteChapters.settingsLabel"
 msgstr "Remote-Kapitel: Ermöglicht externe Galerien und Kapitelnummerierung in Kapiteldefinitionen."
