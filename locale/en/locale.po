@@ -24,6 +24,9 @@ msgstr "Enable or disable the additional features for this press."
 msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
 msgstr "Enabled features"
 
+msgid "plugins.generic.langsciAdditionalFeatures.defaultPublicationFormats.settingsLabel"
+msgstr "Default publication formats: initialize formats once for editable publications."
+
 msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
 msgstr "Reviews: provide existing review links to the book page."
 

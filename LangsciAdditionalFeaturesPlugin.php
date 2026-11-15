@@ -17,6 +17,7 @@ namespace APP\plugins\generic\langsciAdditionalFeatures;
 
 use APP\core\Application;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\Feature;
+use APP\plugins\generic\langsciAdditionalFeatures\classes\features\defaultPublicationFormats\DefaultPublicationFormatsFeature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\reviews\ReviewsSchemaMigration;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\FeatureRegistry;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\LangsciAdditionalFeaturesSettingsForm;
@@ -51,6 +52,7 @@ class LangsciAdditionalFeaturesPlugin extends GenericPlugin
         }
 
         Hook::add('Schema::get::context', $this->addSettingsToContextSchema(...));
+        Hook::add('Schema::get::publication', DefaultPublicationFormatsFeature::addToPublicationSchema(...));
         Hook::add('Template::Settings::workflow::submission', $this->addSettingsTab(...));
 
         foreach (FeatureRegistry::getFeatureClasses() as $featureClass) {

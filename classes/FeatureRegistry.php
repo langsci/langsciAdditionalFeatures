@@ -14,6 +14,7 @@
 namespace APP\plugins\generic\langsciAdditionalFeatures\classes;
 
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\Feature;
+use APP\plugins\generic\langsciAdditionalFeatures\classes\features\defaultPublicationFormats\DefaultPublicationFormatsFeature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\pubState\PubStateFeature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\remoteChapters\RemoteChaptersFeature;
 use APP\plugins\generic\langsciAdditionalFeatures\classes\features\reviews\ReviewsFeature;
@@ -26,6 +27,7 @@ class FeatureRegistry
     public static function getFeatureClasses(): array
     {
         return [
+            DefaultPublicationFormatsFeature::class,
             PubStateFeature::class,
             RemoteChaptersFeature::class,
             ReviewsFeature::class,

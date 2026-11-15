@@ -24,6 +24,9 @@ msgstr "Aktivieren oder deaktivieren Sie die Zusatzfunktionen für diesen Verlag
 msgid "plugins.generic.langsciAdditionalFeatures.settings.enabledFeatures"
 msgstr "Aktivierte Funktionen"
 
+msgid "plugins.generic.langsciAdditionalFeatures.defaultPublicationFormats.settingsLabel"
+msgstr "Standardpublikationsformate: Formate einmalig für bearbeitbare Publikationen anlegen."
+
 msgid "plugins.generic.langsciAdditionalFeatures.reviews.settingsLabel"
 msgstr "Rezensionen: Stellt vorhandene Rezensionslinks für die Buchseite bereit."
 

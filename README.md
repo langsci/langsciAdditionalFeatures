@@ -8,6 +8,35 @@ Features are enabled per press under Settings -> Workflow -> Submission ->
 
 ## Features
 
+### defaultPublicationFormats
+
+When an editor with permission to edit publication metadata opens the format
+grid, this feature initializes the selected, unpublished publication once. It
+adds the legacy Datasets, PDF, Hardcover, Amazon and Paperhive formats that are
+missing, after existing formats. Existing names, metadata and ordering are not
+changed. Hardcover has width 180 and height 245, as in the old plugin; no
+dimension units or remote URLs are assigned.
+
+Later edits and deletions are respected. New versions inherit the initialization
+marker and the formats copied by OMP, provided the container plugin is enabled
+when the version is created. If the container plugin is disabled during
+versioning, the marker cannot be copied; check the new version before enabling
+the feature again. Publications with a nonempty legacy
+`defaultPubFormatsCreated` setting are treated as already initialized; older
+publications without it may receive missing defaults on their first visit.
+Published versions are not initialized. Disabling the feature does not remove
+formats or its marker. Disable the old defaultPublicationFormats plugin to
+avoid competing behavior. If initialization fails, the transaction is rolled
+back and OMP logs the hook error; opening the grid again retries it.
+
+Run the isolated checks from the OMP root (requires PHP SQLite and the
+installed OMP dependencies):
+
+    php plugins/generic/langsciAdditionalFeatures/tests/defaultPublicationFormats.php
+
+These checks do not replace authenticated workflow and concurrent-request
+tests on the target database.
+
 ### reviews
 
 Enable Reviews per press; the active theme is responsible for displaying
